@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login page</title>
+
+</head>
+<body style="background-color: #460606e6; background-image: url(images/Gangster.png)">
+    
+    <div style="background-color: azure; text-align: centre;  display:flex">
+    <span style="display: flex; align-items: center;">
+    <img src="./images/Gangster.png" width="100" height="100" loading="lazy";>
+        <blockquote>Thank you for becoming a part of my family.
+            And subscribing to my website.
+        </blockquote>
+        </span>
+        </div>
+        <div id="loginpage"></div>
+
+
+        <section style="display:flex; align-items: center;">
+        <form>
+
+    <div class="registerationform">
+    <div>
+    <img src="./images/img1.png" class="imgr"  onclick="changer()" style="align-content: center; overflow: hidden; height: 150px; width: 150px; border-radius: 50%;  background: #dfdfdf; object-fit: cover;">
+    <a href="" style="color: deeppink;"><input type="file" class="inputf"></a></img>
+    </div>
+
+        <div style="position: static; display:  block; overflow-x: hidden; align-items: center;">
+    <input type="name" placeholder="Enter your first name" style="align-items: center;" class="namey1" required>
+    <input type="name" placeholder="Enter your second name" class="namey2" required>
+    <input type="email" placeholder="Enter Your Email " class="niki" required="true">
+    <input type="tel" placeholder="Your Phone number" class="nums" required-pattern="+2547">
+    <input type="password" placeholder="Enter a password" class="pass1" aria-required autocomplete="new-password">
+    <input type="password" placeholder="Please confirm your password" class="pass2" aria-required autocomplete="new-password"> 
+       </div>
+
+    <div class="menu">
+        <p style="color: aqua; text-align: center;">Choose Your Purpose.</p>
+        <menu aria-checked="true" style="color: rgba(255, 255, 0, 0.8); text-align: center;">
+    <input type="checkbox" style="cursor: pointer;" value="Reader" title="You are here to witness the truth.">Reader</input><input type="checkbox" style="cursor: pointer;" value="Moral suport" title="support the couse.">Moral suport</input><input type="checkbox" style="cursor: pointer;" value="Writer" title="You want to add some articles to the website.">Writer</input>
+     <input type="checkbox" title="Help with the course" style="cursor: pointer;" value="Donor">Donor</input>
+    </menu>
+     </div>
+      </form>
+    </section>
+     <section style="border-color: aqua; text-align: center;">
+    <div>
+    <a href=""><input type="Submit" id="Submit" onclick="loginUser()" autofocus></a>
+
+    <a href=""><button onclick="confirm('You are about to leave this page!')">Terms&conditions</button></a>
+</div>
+</section>
+</div>
+<script type="module" src="./Users.js"></script>
+</body>
+
+</html>
