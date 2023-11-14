@@ -630,7 +630,7 @@ gap: 10px;
 .featured-bg { display: none;}
 
 .featured-list {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   gap: 30px;
 }
