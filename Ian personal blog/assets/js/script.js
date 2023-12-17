@@ -37,7 +37,7 @@ const backTopBtn = document.querySelector("[data-to-the-top-btn]");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 100 ) {
-    header.classList.add("avtive");
+    header.classList.add("active");
     backTopBtn.classList.add("active");
 } else {
     header.classList.remove("active");
@@ -58,7 +58,7 @@ const sliderContainer = document.querySelector("[data-slider-container]");
 const sliderPrevBtn = document.querySelector("[data-slider-previous]");
 const sliderNextBtn = document.querySelector("[data-slider-next");
 
-let totalSliderVisibleItems = Number(getCommputedStyle("slider").getPropertyValue("--slider-items"));
+let totalSliderVisibleItems = Number(this.getCommputedStyle("slider").getPropertyValue("--slider-items"));
 let totalSlidableItems = sliderContainer.childELementCount - totalSliderVisibleItems;
 
 let currentSlidePos = 0;
@@ -107,14 +107,14 @@ sliderPrevBtn.addEventListener("click",slidePrev);
 
 
 window.addEventListener("resize", function () {
-   totalSliderVisibleItems =Number(this.getComputedStyle(slider).getPropertyValue("--slider-items"));
+   totalSliderVisibleItems =Number(this.getComputedStyle("slider").getPropertyValue("--slider-items"));
    totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
    
    moveSliderItem ();
 });
 
 const newBody = document.getElementsByClassName('btn-primary').addEventListener('click',  () => {
-      if(newBody === clicked){
+      if(clicked){
     newBody.innertext = 'SUBSCRIBED'
       newBody.style.body.color = 'rgba(0,0,0,0.5)'
       }else{
@@ -162,4 +162,4 @@ function  dispalyUser() {
     }
 }
 
-displayUser()
+dispalyUser()
