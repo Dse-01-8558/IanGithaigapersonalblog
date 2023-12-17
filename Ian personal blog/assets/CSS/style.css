@@ -1239,7 +1239,7 @@ border-color: var(--border-prussian-blue);
   .container { max-width: 1140px; }
 
 
-  body.nav-active {overflow-y: overlay; }
+  body.nav-active {overflow-y: scroll; }
 
 
 
